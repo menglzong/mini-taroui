@@ -17,15 +17,62 @@ export default class Home extends Component<{},IState> {
   constructor(props) {
     super(props)
     this.state = {
-      datas: [{
-        title: '基础组件',
-        open: false,
-        items: [
-          {title: 'Icon 图标'},
-          {title: 'Button 按钮'},
-          {title: 'Fab 浮动按钮'},
-        ]
-      }]
+      datas: [
+        {
+          title: '基础组件',
+          open: false,
+          items: [
+            {title: 'Icon 图标'},
+            {title: 'Button 按钮'},
+            {title: 'Fab 浮动按钮'},
+          ]
+        },
+        {
+          title: '视图组件',
+          open: false,
+          items: [
+            {title: 'Avatar 头像'},
+            {title: 'Article 文章样式'},
+            {title: 'Badge 徽标'},
+            {title: 'Countdown 倒计时'},
+            {title: 'Curtain 幕帘'},
+            {title: 'LoadMore 页面提示'},
+            {title: 'Noticebar 通告栏'},
+            {title: 'Tag 标签'},
+            {title: 'Timeline 时间轴'},
+            {title: 'Swiper 滑动视图容器'},
+            {title: 'Divider 分隔符'},
+            {title: 'Steps 步骤条'},
+          ]
+        },
+        // {
+        //   title: '操作反馈',
+        //   open: false,
+        //   items: [
+        //     {title: 'Icon 图标'},
+        //     {title: 'Button 按钮'},
+        //     {title: 'Fab 浮动按钮'},
+        //   ]
+        // },
+        // {
+        //   title: '表单组件',
+        //   open: false,
+        //   items: [
+        //     {title: 'Icon 图标'},
+        //     {title: 'Button 按钮'},
+        //     {title: 'Fab 浮动按钮'},
+        //   ]
+        // },
+        // {
+        //   title: '布局组件',
+        //   open: false,
+        //   items: [
+        //     {title: 'Icon 图标'},
+        //     {title: 'Button 按钮'},
+        //     {title: 'Fab 浮动按钮'},
+        //   ]
+        // }
+      ]
     }
   }
 
@@ -54,7 +101,7 @@ export default class Home extends Component<{},IState> {
               <AtList>
                 {
                   item.items.map((listItem) => {
-                    return <AtListItem title={listItem.title} arrow='right'/>
+                    return <AtListItem iconInfo={{value: 'file-generic', size: 20}} title={listItem.title} arrow='right'/>
                   })
                 }
               </AtList>
