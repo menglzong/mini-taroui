@@ -22,9 +22,9 @@ export default class Home extends Component<{},IState> {
           title: '基础组件',
           open: false,
           items: [
-            {title: 'Icon 图标', page: '/page/baseView/tIcons/index'},
-            {title: 'Button 按钮', page: '/page/baseView/button/index'},
-            {title: 'Fab 浮动按钮', page: '/page/baseView/fab/index'},
+            {title: 'Icon 图标', page: '/pages/baseView/EnochIcons/index'},
+            {title: 'Button 按钮', page: '/pages/baseView/EnochButton/index'},
+            {title: 'Fab 浮动按钮', page: '/pages/baseView/EnochFab/index'},
           ]
         },
         {

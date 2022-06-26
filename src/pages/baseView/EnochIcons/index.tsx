@@ -2,7 +2,7 @@ import { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
 
-export default class Fab extends Component {
+export default class EnochIcons extends Component {
 
   componentWillMount () { }
 
@@ -16,7 +16,7 @@ export default class Fab extends Component {
 
   render () {
     return (
-      <View className='fab'>
+      <View className='tIcons'>
         <Text>Hello world!</Text>
       </View>
     )

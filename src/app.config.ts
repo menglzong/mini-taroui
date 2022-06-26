@@ -2,9 +2,9 @@ export default defineAppConfig({
   pages: [
     'pages/home/index',
     'pages/detail/index',
-    'page/baseView/tIcons/index',
-    'page/baseView/button/index',
-    'page/baseView/fab/index',
+    'pages/baseView/EnochIcons/index',
+    'pages/baseView/EnochButton/index',
+    'pages/baseView/EnochFab/index',
   ],
   // tabBar: {
   //   list: [{
