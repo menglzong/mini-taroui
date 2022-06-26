@@ -1,9 +1,10 @@
 export default defineAppConfig({
   pages: [
     'pages/home/index',
-    'pages/cart/index',
-    'pages/center/index',
     'pages/detail/index',
+    'page/baseView/tIcons/index',
+    'page/baseView/button/index',
+    'page/baseView/fab/index',
   ],
   // tabBar: {
   //   list: [{

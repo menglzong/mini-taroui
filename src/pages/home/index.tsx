@@ -22,9 +22,9 @@ export default class Home extends Component<{},IState> {
           title: '基础组件',
           open: false,
           items: [
-            {title: 'Icon 图标'},
-            {title: 'Button 按钮'},
-            {title: 'Fab 浮动按钮'},
+            {title: 'Icon 图标', page: '/page/baseView/tIcons/index'},
+            {title: 'Button 按钮', page: '/page/baseView/button/index'},
+            {title: 'Fab 浮动按钮', page: '/page/baseView/fab/index'},
           ]
         },
         {
@@ -86,6 +86,10 @@ export default class Home extends Component<{},IState> {
     this.forceUpdate()
   }
 
+  listItemClick(item) {
+    Taro.navigateTo({url: item.page})
+  }
+
   render () {
     const { datas } = this.state
     return (
@@ -101,7 +105,7 @@ export default class Home extends Component<{},IState> {
               <AtList>
                 {
                   item.items.map((listItem) => {
-                    return <AtListItem iconInfo={{value: 'file-generic', size: 20}} title={listItem.title} arrow='right'/>
+                    return <AtListItem iconInfo={{value: 'file-generic', size: 20}} title={listItem.title} arrow='right' onClick={this.listItemClick.bind(this, listItem)}/>
                   })
                 }
               </AtList>
