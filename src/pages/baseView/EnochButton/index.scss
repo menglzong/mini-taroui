@@ -1,0 +1,27 @@
+
+.button {
+    flex-direction: column;
+    display: flex;
+}
+
+.title {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.btn {
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.fullBtn {
+    margin-top: 15px;
+}
+
+.smallBtn {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
