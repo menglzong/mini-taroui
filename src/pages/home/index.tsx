@@ -43,7 +43,6 @@ export default class Home extends Component<{},IState> {
     const { datas } = this.state
     return (
       <View className='home'>
-        <Text>Taro-UI</Text>
         {
           datas && datas.map((item, index) => {
             return <AtAccordion 
