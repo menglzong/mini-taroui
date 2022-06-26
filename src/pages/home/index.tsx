@@ -100,6 +100,7 @@ export default class Home extends Component<{},IState> {
               key={item.title}
               title={item.title}
               open={item.open}
+              isAnimation={false}
               onClick={this.accordionClick.bind(this, item, index)}
             >
               <AtList>
