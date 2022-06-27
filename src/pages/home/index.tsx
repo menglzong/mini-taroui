@@ -87,7 +87,7 @@ export default class Home extends Component<{},IState> {
   }
 
   listItemClick(item) {
-    Taro.navigateTo({url: item.page})
+    Taro.navigateTo({url: item.page + '?title=' + item.title})
   }
 
   render () {
