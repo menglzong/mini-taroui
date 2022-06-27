@@ -4,15 +4,10 @@ import './index.scss'
 
 export default class Swiper extends Component {
 
-  componentWillMount () { }
+  constructor(props) {
+    super(props)
 
-  componentDidMount () { }
-
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
+  }
 
   render () {
     return (
