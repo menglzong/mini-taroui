@@ -1,19 +1,9 @@
 import { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
-import { AtButton } from 'taro-ui'
+import { AtButton, AtFab } from 'taro-ui'
 
 export default class EnochButton extends Component {
-
-  componentWillMount () { }
-
-  componentDidMount () { }
-
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
 
   render () {
     return (
@@ -52,6 +42,38 @@ export default class EnochButton extends Component {
           <AtButton size={'small'} loading></AtButton>
         </View>
 
+        <View className={'smallBtn'}>
+          <AtButton type={'primary'} size={'small'} disabled={true}>按钮</AtButton>
+          <AtButton type={'secondary'} size={'small'} disabled={true}>按钮</AtButton>
+          <AtButton size={'small'} disabled={true}>按钮</AtButton>
+        </View>
+
+        <Text className={'title'}>圆角按钮</Text>
+        <View className={'smallBtn'}>
+          <AtButton type={'primary'} size={'small'} circle>按钮</AtButton>
+          <AtButton type={'secondary'} size={'small'} circle>按钮</AtButton>
+          <AtButton size={'small'} circle>按钮</AtButton>
+        </View>
+
+        <View className={'smallBtn'}>
+          <AtButton type={'primary'} size={'small'} loading circle></AtButton>
+          <AtButton type={'secondary'} size={'small'} loading circle></AtButton>
+          <AtButton size={'small'} loading circle></AtButton>
+        </View>
+
+        <View className={'smallBtn'}>
+          <AtButton type={'primary'} size={'small'} disabled={true} circle>按钮</AtButton>
+          <AtButton type={'secondary'} size={'small'} disabled={true} circle>按钮</AtButton>
+          <AtButton size={'small'} disabled={true} circle>按钮</AtButton>
+        </View>
+
+        <Text className={'title'}>浮动按钮</Text>
+        <Text className={'title'}>右侧是浮动按钮</Text>
+        <View className='feb'>
+        <AtFab>
+        <Text className='at-fab__icon at-icon at-icon-menu'></Text>
+        </AtFab>
+        </View>
       </View>
     )
   }

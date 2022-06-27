@@ -24,7 +24,7 @@ export default class Home extends Component<{},IState> {
           items: [
             {title: 'Icon 图标', page: '/pages/baseView/EnochIcons/index'},
             {title: 'Button 按钮', page: '/pages/baseView/EnochButton/index'},
-            {title: 'Fab 浮动按钮', page: '/pages/baseView/EnochFab/index'},
+            {title: 'Fab 浮动按钮', page: '/pages/baseView/EnochButton/index'},
           ]
         },
         {
