@@ -10,6 +10,14 @@ export default defineAppConfig({
     'pages/components/Avatar/index',
     'pages/components/Badge/index',
     'pages/components/Countdown/index',
+    'pages/components/Curtain/index',
+    'pages/components/Divider/index',
+    'pages/components/LoadMore/index',
+    'pages/components/Noticebar/index',
+    'pages/components/Steps/index',
+    'pages/components/Swiper/index',
+    'pages/components/Tag/index',
+    'pages/components/Timeline/index'
   ],
   // tabBar: {
   //   list: [{

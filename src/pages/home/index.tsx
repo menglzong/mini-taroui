@@ -35,14 +35,14 @@ export default class Home extends Component<{},IState> {
             {title: 'Article 文章样式', page: '/pages/components/Article/index'},
             {title: 'Badge 徽标', page: '/pages/components/Badge/index'},
             {title: 'Countdown 倒计时', page: '/pages/components/Countdown/index'},
-            {title: 'Curtain 幕帘'},
-            {title: 'LoadMore 页面提示'},
-            {title: 'Noticebar 通告栏'},
-            {title: 'Tag 标签'},
-            {title: 'Timeline 时间轴'},
-            {title: 'Swiper 滑动视图容器'},
-            {title: 'Divider 分隔符'},
-            {title: 'Steps 步骤条'},
+            {title: 'Curtain 幕帘', page: '/pages/components/Curtain/index'},
+            {title: 'LoadMore 页面提示', page: '/pages/components/LoadMore/index'},
+            {title: 'Noticebar 通告栏', page: '/pages/components/Noticebar/index'},
+            {title: 'Tag 标签', page: '/pages/components/Tag/index'},
+            {title: 'Timeline 时间轴', page: '/pages/components/Timeline/index'},
+            {title: 'Swiper 滑动视图容器', page: '/pages/components/Swiper/index'},
+            {title: 'Divider 分隔符', page: '/pages/components/Divider/index'},
+            {title: 'Steps 步骤条', page: '/pages/components/Steps/index'}
           ]
         },
         // {
