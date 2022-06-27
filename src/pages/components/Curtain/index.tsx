@@ -2,7 +2,7 @@ import { Component } from 'react'
 import { View, Text, Image } from '@tarojs/components'
 import './index.scss'
 import { AtCurtain, AtButton }from 'taro-ui'
-// import bargainBg from '../../../assets/images/bargainBg.png'
+import bargainBg from '../../../assets/images/bargainBg.png'
 
 interface IState {
   isOpened: boolean
@@ -32,8 +32,8 @@ export default class Curtain extends Component<{}, IState> {
     const { isOpened } = this.state
     return (
       <View className='Curtain'>
-        <AtCurtain onClose={this.onClose.bind(this)} isOpened={isOpened}>
-          <Image src={'bargainBg.png'}></Image>
+        <AtCurtain onClose={this.onClose.bind(this)} isOpened={isOpened} closeBtnPosition={'top'}>
+          <Image className={'img'} src={bargainBg}></Image>
         </AtCurtain>
         <View className={'content'}>
           <View className={'line'}></View>
