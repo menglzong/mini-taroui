@@ -2,9 +2,14 @@ export default defineAppConfig({
   pages: [
     'pages/home/index',
     'pages/detail/index',
+    //基础组件
     'pages/baseView/EnochIcons/index',
     'pages/baseView/EnochButton/index',
-    'pages/baseView/EnochFab/index',
+    //视图组件
+    'pages/components/Article/index',
+    'pages/components/Avatar/index',
+    'pages/components/Badge/index',
+    'pages/components/Countdown/index',
   ],
   // tabBar: {
   //   list: [{
