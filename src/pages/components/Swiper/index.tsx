@@ -11,6 +11,7 @@ interface IProps {
 
 interface IState {
   showDots: boolean
+  autoplay: boolean
 }
 export default class EnochSwiper extends Component<IProps, IState> {
 
@@ -19,7 +20,8 @@ export default class EnochSwiper extends Component<IProps, IState> {
   constructor(props) {
     super(props)
     this.state = {
-      showDots: true
+      showDots: true,
+      autoplay: true
     }
     Taro.setNavigationBarTitle({title: this.instance?.title ?? ''})
   }
@@ -30,8 +32,14 @@ export default class EnochSwiper extends Component<IProps, IState> {
     })
   }
 
+  onChangeAutoplay(value) {
+    this.setState({
+      autoplay: value
+    })
+  }
+
   render () {
-    const { showDots } = this.state
+    const { showDots, autoplay } = this.state
     return (
       <View className='Swiper'>
         <Swiper
@@ -41,7 +49,7 @@ export default class EnochSwiper extends Component<IProps, IState> {
           vertical={false}
           circular
           indicatorDots={showDots}
-          autoplay>
+          autoplay={autoplay}>
           <SwiperItem>
             <View className='demo-text-1'>1</View>
           </SwiperItem>
@@ -54,6 +62,8 @@ export default class EnochSwiper extends Component<IProps, IState> {
         </Swiper>
         <AtForm>
           <AtSwitch title={'指示点'} checked={showDots} onChange={this.onChangeShowDots.bind(this)}></AtSwitch>
+          <AtSwitch title={'自动播放'} checked={autoplay} onChange={this.onChangeAutoplay.bind(this)}></AtSwitch>
+          {/* <AtSwitch title={'循环播放'} checked={showDots} onChange={this.onChangeShowDots.bind(this)}></AtSwitch> */}
         </AtForm>
       </View>
     )
