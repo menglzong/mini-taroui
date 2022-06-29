@@ -1,23 +1,46 @@
 import { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
+import { AtActivityIndicator, AtSwitch } from 'taro-ui'
 
-export default class Enochactivityindicator extends Component {
+interface IState {
+  isShow: boolean
+  showTitle: string
+}
+export default class Enochactivityindicator extends Component<{}, IState> {
 
-  componentWillMount () { }
+  constructor(props) {
+    super(props)
+    this.state = {
+      isShow: true,
+      showTitle: '开启中'
+    }
+  }
 
-  componentDidMount () { }
-
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
+  onChange(value) {
+    this.setState({
+      isShow: value,
+      showTitle: value ? '开启中' : '完成'
+    })
+  }
 
   render () {
+    const { isShow, showTitle } = this.state
     return (
       <View className='EnochActivityIndicator'>
-        <Text>Hello world!</Text>
+        <View className={'content'}>
+          <AtActivityIndicator ></AtActivityIndicator>
+          <AtActivityIndicator className={'marginLeft'} size={32} color={'red'}></AtActivityIndicator>
+          <AtActivityIndicator className={'marginLeft'} size={64} color={'green'}></AtActivityIndicator>
+        </View>
+
+        <View className={'content load'}>
+          <AtSwitch className={'switch'} title={showTitle} checked={isShow} onChange={this.onChange.bind(this)}></AtSwitch>
+          <View  className={'switchC'}>
+            <AtActivityIndicator mode={'center'} isOpened={isShow} size={64} color={'red'} content={'加载中'}></AtActivityIndicator>
+          </View>
+        </View>
+
       </View>
     )
   }
