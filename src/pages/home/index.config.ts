@@ -1,3 +1,4 @@
 export default definePageConfig({
-  navigationBarTitleText: 'Taro-UI'
+  navigationBarTitleText: 'Taro-UI',
+  enableShareAppMessage: true
 })

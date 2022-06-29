@@ -17,7 +17,15 @@ export default defineAppConfig({
     'pages/components/Steps/index',
     'pages/components/Swiper/index',
     'pages/components/Tag/index',
-    'pages/components/Timeline/index'
+    'pages/components/Timeline/index',
+    //操作反馈
+    'pages/feedback/EnocActionSheet/index',
+    'pages/feedback/EnochActivityIndicator/index',
+    'pages/feedback/EnochMessage/index',
+    'pages/feedback/EnochModal/index',
+    'pages/feedback/EnochProgress/index',
+    'pages/feedback/EnochSwipeAction/index',
+    'pages/feedback/EnochToast/index'
   ],
   // tabBar: {
   //   list: [{
