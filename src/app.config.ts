@@ -19,7 +19,7 @@ export default defineAppConfig({
     'pages/components/Tag/index',
     'pages/components/Timeline/index',
     //操作反馈
-    'pages/feedback/EnocActionSheet/index',
+    'pages/feedback/EnochActionSheet/index',
     'pages/feedback/EnochActivityIndicator/index',
     'pages/feedback/EnochMessage/index',
     'pages/feedback/EnochModal/index',
