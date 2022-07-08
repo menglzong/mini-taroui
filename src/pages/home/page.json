@@ -32,11 +32,11 @@
       "items": [
         {"title": "ActionSheet 动作面板", "page": "/pages/feedback/EnochActionSheet/index"},
         {"title": "ActivityIndicator 活动指示器", "page": "/pages/feedback/EnochActivityIndicator/index"},
-        {"title": "Modal 模态框", "page": "/pages/feedback/EnochMessage/index"},
-        {"title": "Progress 进度条", "page": "/pages/feedback/EnochModal/index"},
-        {"title": "Toast 轻提示", "page": "/pages/feedback/EnochProgress/index"},
+        {"title": "Modal 模态框", "page": "/pages/feedback/EnochModal/index"},
+        {"title": "Progress 进度条", "page": "/pages/feedback/EnochProgress/index"},
+        {"title": "Toast 轻提示", "page": "/pages/feedback/EnochToast/index"},
         {"title": "SwipeAction 滑动操作", "page": "/pages/feedback/EnochSwipeAction/index"},
-        {"title": "Message 消息通知", "page": "/pages/feedback/EnochToast/index"}
+        {"title": "Message 消息通知", "page": "/pages/feedback/EnochMessage/index"}
       ]
     }
   ]

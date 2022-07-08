@@ -1,3 +1,3 @@
 export default definePageConfig({
-  navigationBarTitleText: 'oast 轻提示'
+  navigationBarTitleText: 'toast 轻提示'
 })
