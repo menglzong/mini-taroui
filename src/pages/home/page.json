@@ -38,6 +38,25 @@
         {"title": "SwipeAction 滑动操作", "page": "/pages/feedback/EnochSwipeAction/index"},
         {"title": "Message 消息通知", "page": "/pages/feedback/EnochMessage/index"}
       ]
+    },
+    {
+      "title": "表单组件",
+      "open": false,
+      "items": [
+        {"title": "Form 表单组件", "page": "/pages/formComponents/EnochForm/index"},
+        {"title": "Input 按钮", "page": "/pages/formComponents/EnochInput/index"},
+        {"title": "InputNumber 输入框", "page": "/pages/formComponents/EnochInputNumber/index"},
+        {"title": "Radio 单选框", "page": "/pages/formComponents/EnochRadio/index"},
+        {"title": "Checkbox 多选框", "page": "/pages/formComponents/EnochCheckbox/index"},
+        {"title": "Rate 评分组件", "page": "/pages/formComponents/EnochRate/index"},
+        {"title": "Switch 开关组件", "page": "/pages/formComponents/EnochSwitch/index"},
+        {"title": "Textarea 多行文本框", "page": "/pages/formComponents/EnochTextarea/index"},
+        {"title": "Picker 选择器", "page": "/pages/formComponents/EnochPicker/index"},
+        {"title": "SearchBar 搜索栏", "page": "/pages/formComponents/EnochSearchBar/index"},
+        {"title": "Slider 滑动条", "page": "/pages/formComponents/EnochSlider/index"},
+        {"title": "ImagePicker 图片选择器", "page": "/pages/formComponents/EnochImagePicker/index"},
+        {"title": "Range 范围选择器", "page": "/pages/formComponents/EnochRange/index"}
+      ]
     }
   ]
 

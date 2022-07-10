@@ -25,7 +25,21 @@ export default defineAppConfig({
     'pages/feedback/EnochModal/index',
     'pages/feedback/EnochProgress/index',
     'pages/feedback/EnochSwipeAction/index',
-    'pages/feedback/EnochToast/index'
+    'pages/feedback/EnochToast/index',
+    //表单组件
+    'pages/formComponents/EnochForm/index',
+    'pages/formComponents/EnochInput/index',
+    'pages/formComponents/EnochInputNumber/index',
+    'pages/formComponents/EnochRadio/index',
+    'pages/formComponents/EnochCheckbox/index',
+    'pages/formComponents/EnochRate/index',
+    'pages/formComponents/EnochSwitch/index',
+    'pages/formComponents/EnochTextarea/index',
+    'pages/formComponents/EnochPicker/index',
+    'pages/formComponents/EnochSearchBar/index',
+    'pages/formComponents/EnochSlider/index',
+    'pages/formComponents/EnochImagePicker/index',
+    'pages/formComponents/EnochRange/index'
   ],
   // tabBar: {
   //   list: [{
