@@ -1,3 +1,3 @@
 export default definePageConfig({
-  navigationBarTitleText: 'Input 按钮'
+  navigationBarTitleText: 'Input 输入框'
 })
