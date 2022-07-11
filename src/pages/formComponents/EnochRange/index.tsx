@@ -5,14 +5,14 @@ import { AtRange } from 'taro-ui'
 import Taro from '@tarojs/taro'
 
 interface IState {
-  value: number[]
+  value: [number, number]
 }
 export default class Enochrange extends Component<{}, IState> {
 
   constructor(props) {
     super(props)
     this.state = {
-      value: [2, 10]
+      value: [5, 10]
     }
   }
 
@@ -37,10 +37,10 @@ export default class Enochrange extends Component<{}, IState> {
         </View>
         <View className={'padding'}>
           <AtRange
+            blockSize={20}
             max={50}
             min={0}
             value={this.state.value}
-            showValue
             onChange={this.onChange.bind(this)}
             onAfterChange={this.onAfterChange.bind(this)}
           />
