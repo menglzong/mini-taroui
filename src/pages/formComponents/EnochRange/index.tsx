@@ -1,23 +1,50 @@
 import { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
+import { AtRange } from 'taro-ui'
+import Taro from '@tarojs/taro'
 
-export default class Enochrange extends Component {
+interface IState {
+  value: number[]
+}
+export default class Enochrange extends Component<{}, IState> {
 
-  componentWillMount () { }
+  constructor(props) {
+    super(props)
+    this.state = {
+      value: [2, 10]
+    }
+  }
 
-  componentDidMount () { }
+  onChange(event) {
+    this.setState({
+      value: event
+    })
+  }
 
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
+  onAfterChange(event) {
+    Taro.showToast({
+      title: event.toString()
+    })
+  }
 
   render () {
     return (
-      <View className='EnochRange'>
-        <Text>Hello world!</Text>
+      <View className='Enochrange'>
+        <View className={'content'}>
+          <View className={'line'}></View>
+          <Text className={'title'}>基础用法</Text>
+        </View>
+        <View className={'padding'}>
+          <AtRange
+            max={50}
+            min={0}
+            value={this.state.value}
+            showValue
+            onChange={this.onChange.bind(this)}
+            onAfterChange={this.onAfterChange.bind(this)}
+          />
+        </View>
       </View>
     )
   }
