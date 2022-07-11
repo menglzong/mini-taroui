@@ -35,12 +35,20 @@ export default class Enochpicker extends Component<{}, IState> {
     })
   }
 
-  onChanging(event) {
+  onChangeTime(event) {
+    this.setState({
+      timeSel: event.detail.value
+    })
+  }
 
+  onChangeDate(event) {
+    this.setState({
+      dateSel: event.detail.value
+    })
   }
 
   render () {
-    const { selector, selChecked } = this.state
+    const { selector, selChecked, timeSel, dateSel } = this.state
     return (
       <View className='EnochPicker'>
         <View className={'content'}>
@@ -57,6 +65,37 @@ export default class Enochpicker extends Component<{}, IState> {
               </AtList>
           </Picker>
         </View>
+
+        <View className={'content'}>
+          <View className={'line'}></View>
+          <Text className={'title'}>时间选择器</Text>
+        </View>
+        <View className={'padding'}>
+          <Picker mode={'time'} value={timeSel} onChange={this.onChangeTime.bind(this)}>
+            <AtList>
+                <AtListItem
+                  title='时间'
+                  extraText={timeSel}
+                />
+              </AtList>
+          </Picker>
+        </View>
+
+        <View className={'content'}>
+          <View className={'line'}></View>
+          <Text className={'title'}>日期选择器</Text>
+        </View>
+        <View className={'padding'}>
+          <Picker mode={'date'} value={dateSel} onChange={this.onChangeTime.bind(this)}>
+            <AtList>
+                <AtListItem
+                  title='日期'
+                  extraText={dateSel}
+                />
+              </AtList>
+          </Picker>
+        </View>
+
       </View>
     )
   }
