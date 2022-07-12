@@ -55,7 +55,7 @@ export default class Enochinput extends Component<{}, IState> {
 
         <View className={'content'}>
           <View className={'line'}></View>
-          <Text className={'title'}>输入框类型</Text>
+          <Text className={'title'}>输入框类型（声明只展示输入框的类型，不收集用户信息）</Text>
         </View>
         <View className={'padding'}>
           <AtForm>
@@ -76,9 +76,9 @@ export default class Enochinput extends Component<{}, IState> {
           <AtForm>
             <AtInput name={'text'} title={'禁用'} disabled placeholder={'请输入文本'}/>
             <AtInput name={'num'} title={'数字'} type={'number'} error placeholder={'请输入数字'}/>
-            <AtInput name={'pwd'} title={'密码'} type={'password'} editable={false} placeholder={'请输入密码'}/>
-            <AtInput name={'idcard'} title={'身份证'} type={'idcard'} clear placeholder={'请输入身份证号'}/>
-            <AtInput name={'phone'} title={'手机号'} type={'phone'} required placeholder={'请输入手机号'}/>
+            <AtInput name={'pwd'} title={'文本'} editable={false} placeholder={'请输入文本'}/>
+            <AtInput name={'idcard'} title={'文本'} clear placeholder={'请输入文本'}/>
+            <AtInput name={'phone'} title={'文本'} required placeholder={'请输入文本'}/>
           </AtForm>
         </View>
 
