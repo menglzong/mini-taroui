@@ -14,6 +14,8 @@ class App extends Component {
 
   // this.props.children 是将要会渲染的页面
   render () {
+    //gjhgjhgjhgj
+    //gjgjhghjgjhgjh
     return this.props.children
   }
 }
