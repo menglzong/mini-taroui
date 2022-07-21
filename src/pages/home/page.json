@@ -57,6 +57,18 @@
         {"title": "ImagePicker 图片选择器", "page": "/pages/formComponents/EnochImagePicker/index"},
         {"title": "Range 范围选择器", "page": "/pages/formComponents/EnochRange/index"}
       ]
+    },
+    {
+      "title": "布局组件",
+      "open": false,
+      "items": [
+        {"title": "Flex 弹性布局", "page": "/pages/flexComponents/EnochFlex/index"},
+        {"title": "Grid 栅格布局", "page": "/pages/flexComponents/EnochGrid/index"},
+        {"title": "List 列表", "page": "/pages/flexComponents/EnochList/index"},
+        {"title": "Card 卡片", "page": "/pages/flexComponents/EnochCard/index"},
+        {"title": "FloatLayout 浮动弹层", "page": "/pages/flexComponents/EnochFloatLayout/index"},
+        {"title": "Accordion 手风琴", "page": "/pages/flexComponents/EnochAccordion/index"}
+      ]
     }
   ]
 

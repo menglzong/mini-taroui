@@ -39,7 +39,22 @@ export default defineAppConfig({
     'pages/formComponents/EnochSearchBar/index',
     'pages/formComponents/EnochSlider/index',
     'pages/formComponents/EnochImagePicker/index',
-    'pages/formComponents/EnochRange/index'
+    'pages/formComponents/EnochRange/index',
+    //布局组件
+    'pages/flexComponents/EnochFlex/index',
+    'pages/flexComponents/EnochGrid/index',
+    'pages/flexComponents/EnochList/index',
+    'pages/flexComponents/EnochCard/index',
+    'pages/flexComponents/EnochFloatLayout/index',
+    'pages/flexComponents/EnochAccordion/index'
+    //导航组件
+    // 'pages/flexComponents/EnochSwitch/index',
+    // 'pages/flexComponents/EnochTextarea/index',
+    // 'pages/flexComponents/EnochPicker/index',
+    // 'pages/flexComponents/EnochSearchBar/index',
+    // 'pages/flexComponents/EnochSlider/index',
+    // 'pages/flexComponents/EnochImagePicker/index',
+    // 'pages/flexComponents/EnochRange/index'
   ],
   // tabBar: {
   //   list: [{
