@@ -46,15 +46,16 @@ export default defineAppConfig({
     'pages/flexComponents/EnochList/index',
     'pages/flexComponents/EnochCard/index',
     'pages/flexComponents/EnochFloatLayout/index',
-    'pages/flexComponents/EnochAccordion/index'
+    'pages/flexComponents/EnochAccordion/index',
     //导航组件
-    // 'pages/flexComponents/EnochSwitch/index',
-    // 'pages/flexComponents/EnochTextarea/index',
-    // 'pages/flexComponents/EnochPicker/index',
-    // 'pages/flexComponents/EnochSearchBar/index',
-    // 'pages/flexComponents/EnochSlider/index',
-    // 'pages/flexComponents/EnochImagePicker/index',
-    // 'pages/flexComponents/EnochRange/index'
+    'pages/navComponents/EnochNavBar/index',
+    'pages/navComponents/EnochTabBar/index',
+    'pages/navComponents/EnochTabs/index',
+    'pages/navComponents/EnochSegmentedControl/index',
+    'pages/navComponents/EnochPagination/index',
+    'pages/navComponents/EnochDrawer/index',
+    'pages/navComponents/EnochIndexes/index',
+    'pages/navComponents/EnochCalendar/index'
   ],
   // tabBar: {
   //   list: [{

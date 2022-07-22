@@ -69,6 +69,20 @@
         {"title": "FloatLayout 浮动弹层", "page": "/pages/flexComponents/EnochFloatLayout/index"},
         {"title": "Accordion 手风琴", "page": "/pages/flexComponents/EnochAccordion/index"}
       ]
+    },
+    {
+      "title": "导航组件",
+      "open": false,
+      "items": [
+        {"title": "NavBar 导航栏", "page": "/pages/navComponents/EnochNavBar/index"},
+        {"title": "TabBar 标签栏", "page": "/pages/navComponents/EnochTabBar/index"},
+        {"title": "Tabs 标签页", "page": "/pages/navComponents/EnochTabs/index"},
+        {"title": "SegmentedControl 分段器", "page": "/pages/navComponents/EnochSegmentedControl/index"},
+        {"title": "Pagination 分页器", "page": "/pages/navComponents/EnochPagination/index"},
+        {"title": "Drawer 抽屉", "page": "/pages/navComponents/EnochDrawer/index"},
+        {"title": "Indexes 索引选择器", "page": "/pages/navComponents/EnochIndexes/index"},
+        {"title": "Calendar 日历", "page": "/pages/navComponents/EnochCalendar/index"}
+      ]
     }
   ]
 
