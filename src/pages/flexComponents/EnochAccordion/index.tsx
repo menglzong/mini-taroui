@@ -17,7 +17,7 @@ export default class Enochaccordion extends Component {
   render () {
     return (
       <View className='EnochAccordion'>
-        <Text>Hello world!</Text>
+        <Text>参考首页展开/折叠</Text>
       </View>
     )
   }
