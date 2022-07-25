@@ -17,7 +17,7 @@ export default class Center extends Component {
   render () {
     return (
       <View className='center'>
-        <Text>Hello world!！！！</Text>
+        <Text>Hello world!！！！!!!!</Text>
       </View>
     )
   }
