@@ -1,0 +1,29 @@
+// @import '~taro-ui/dist/style/components/drawer.scss';
+// @import '~taro-ui/dist/style/components/list.scss';
+// @import '~taro-ui/dist/style/index.scss';
+
+content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.line {
+    background-color: blue;
+    width: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin-left: 15px;
+}
+
+.drawer-item {
+    border: 1px solid #fbfbfb;
+    border-color: cadetblue;
+    // border-width: 2px;
+    border-radius: 4px;
+    // height: 100px;
+}
