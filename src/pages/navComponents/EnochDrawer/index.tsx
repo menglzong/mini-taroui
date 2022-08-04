@@ -88,7 +88,7 @@ export default class Enochdrawer extends Component<{}, IState> {
           <View className={'line'}></View>
           <Text className={'title'}>右侧滑出</Text>
         </View>
-        <AtButton onClick={this.onLeftClick.bind(this)}>显示Drawer 抽屉</AtButton>
+        <AtButton onClick={this.onRightClick.bind(this)}>显示Drawer 抽屉</AtButton>
 
         <AtDrawer 
           right
