@@ -21,9 +21,9 @@ content {
 }
 
 .drawer-item {
-    border: 1px solid #fbfbfb;
-    border-color: cadetblue;
-    // border-width: 2px;
+    // border: 2px solid red;
     border-radius: 4px;
-    // height: 100px;
+    border-style: solid; 
+    border-width: 2px;
+    border-color: blueviolet;
 }
