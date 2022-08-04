@@ -2,6 +2,7 @@ import { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
 import { AtDrawer, AtButton, AtIcon } from 'taro-ui'
+import Taro from '@tarojs/taro'
 
 
 interface IState {
@@ -58,6 +59,11 @@ export default class Enochdrawer extends Component<{}, IState> {
           mask 
           onClose={this.onClose.bind(this)} 
           items={['菜单1', '菜单2']}
+          onItemClick={(index)=>{
+            Taro.showToast({
+              title: '选择' + (index + 1)
+            })
+          }}
         ></AtDrawer>
         <View className={'content'}>
           <View className={'line'}></View>
@@ -72,6 +78,11 @@ export default class Enochdrawer extends Component<{}, IState> {
           mask 
           onClose={this.onClose.bind(this)} 
           items={['菜单1', '菜单2']}
+          onItemClick={(index)=>{
+            Taro.showToast({
+              title: '选择' + (index + 1)
+            })
+          }}
         ></AtDrawer>
         <View className={'content'}>
           <View className={'line'}></View>
@@ -84,6 +95,11 @@ export default class Enochdrawer extends Component<{}, IState> {
           show={this.state.showCustom} 
           mask 
           onClose={this.onClose.bind(this)} 
+          onItemClick={(index)=>{
+            Taro.showToast({
+              title: '选择' + (index + 1)
+            })
+          }}
         >
           <View className='drawer-item'>优先展示items里的数据</View>
           <View className='drawer-item'>如果items没有数据就会展示children</View>
