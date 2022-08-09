@@ -37,6 +37,7 @@ export default class Home extends Component<{},IState> {
     Taro.navigateTo({url: item.page + '?title=' + item.title})
   }
 
+
   // onShareAppMessage () {
   //   return {
   //     title: 'Taro-UI',
