@@ -4,6 +4,8 @@ import 'taro-ui/dist/style/index.scss'
 class App extends Component {
 
 hahahahahah() {
+  console.log(1111);
+  
 
 }
 
