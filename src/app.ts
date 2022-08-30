@@ -3,11 +3,16 @@ import './app.scss'
 import 'taro-ui/dist/style/index.scss'
 class App extends Component {
 
-hahahahahah() {
+  // componentDidMount () {}
 
-}
+  // componentDidShow () {}
 
-render () {
+  // componentDidHide () {}
+
+  // componentDidCatchError () {}
+
+  // this.props.children 是将要会渲染的页面
+  render () {
     return this.props.children
   }
 }
