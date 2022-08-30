@@ -8,10 +8,10 @@ class App extends Component {
   // componentDidShow () {}
 
 
-  // componentDidHide () {}
+  componentDidHide () {}
 
 
-  // componentDidCatchError () {}
+  componentDidCatchError () {}
 
   // this.props.children 是将要会渲染的页面
   render () {
